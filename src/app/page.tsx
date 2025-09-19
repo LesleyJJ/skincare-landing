@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { 
-  Star, 
-  CheckCircle, 
-  Leaf, 
-  Droplets, 
-  Sparkles, 
+import {
+  Star,
+  CheckCircle,
+  Leaf,
+  Droplets,
+  Sparkles,
   FlaskConical,
   ChevronDown,
   Play,
@@ -32,12 +32,13 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+
                 <span className="text-pink-400">Glowé</span> - Glow Naturally in Just{' '}
                 <span className="text-pink-400">7 Days</span>{' '}
                 <span className="text-4xl">✨</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Our Vitamin C Brightening Serum is packed with natural antioxidants 
+                Our Vitamin C Brightening Serum is packed with natural antioxidants
                 for healthier, radiant skin.
               </p>
               <button className="bg-pink-400 hover:bg-pink-500 text-white font-semibold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -148,9 +149,9 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-800 mb-6">
-                What&apos;s Inside Matters
-              </h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">
+              What&apos;s Inside Matters
+            </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
@@ -343,10 +344,9 @@ export default function Home() {
                   onClick={() => toggleFaq(index)}
                 >
                   <h3 className="text-lg font-semibold text-gray-800">{faq.q}</h3>
-                  <ChevronDown 
-                    className={`w-5 h-5 text-gray-500 transition-transform ${
-                      openFaq === index ? 'rotate-180' : ''
-                    }`} 
+                  <ChevronDown
+                    className={`w-5 h-5 text-gray-500 transition-transform ${openFaq === index ? 'rotate-180' : ''
+                      }`}
                   />
                 </button>
                 {openFaq === index && (
